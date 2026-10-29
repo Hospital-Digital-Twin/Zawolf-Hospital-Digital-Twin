@@ -1,0 +1,7 @@
+or_id,department_id,room_name,specialty,daily_capacity_hours,is_active
+OR-01,DEP-OR,Operating Room 1,GENERAL,10.0,True
+OR-02,DEP-OR,Operating Room 2,ORTHOPEDIC,10.0,True
+OR-03,DEP-OR,Operating Room 3,CARDIAC,10.0,True
+OR-04,DEP-OR,Operating Room 4,GENERAL,10.0,True
+OR-05,DEP-OR,Operating Room 5,ORTHOPEDIC,10.0,True
+OR-06,DEP-OR,Operating Room 6,GENERAL,10.0,True

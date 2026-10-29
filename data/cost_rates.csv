@@ -1,0 +1,7 @@
+cost_rate_id,cost_category,department_id,unit,rate_egp,effective_from,effective_to
+COST-001,DOCTOR_HOUR,DEP-ER,hour,300,2026-07-23,
+COST-002,NURSE_HOUR,DEP-ER,hour,180,2026-07-23,
+COST-003,BED_DAY,DEP-WARD,bed_day,900,2026-07-23,
+COST-004,ICU_BED_DAY,DEP-ICU,bed_day,4200,2026-07-23,
+COST-005,OR_HOUR,DEP-OR,hour,6500,2026-07-23,
+COST-006,OVERTIME_HOUR,,hour,250,2026-07-23,

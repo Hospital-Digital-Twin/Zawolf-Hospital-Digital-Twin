@@ -1,0 +1,24 @@
+room_id,department_id,room_name,room_type,is_active
+ROOM-ER-01,DEP-ER,ER Bay 1,ER,True
+ROOM-ER-02,DEP-ER,ER Bay 2,ER,True
+ROOM-ER-03,DEP-ER,ER Bay 3,ER,True
+ROOM-ICU-01,DEP-ICU,Intensive Care Unit Room 1,ICU,True
+ROOM-ICU-02,DEP-ICU,Intensive Care Unit Room 2,ICU,True
+ROOM-WARD-01,DEP-WARD,General Ward Room 1,WARD,True
+ROOM-WARD-02,DEP-WARD,General Ward Room 2,WARD,True
+ROOM-WARD-03,DEP-WARD,General Ward Room 3,WARD,True
+ROOM-WARD-04,DEP-WARD,General Ward Room 4,WARD,True
+ROOM-WARD-05,DEP-WARD,General Ward Room 5,WARD,True
+ROOM-WARD-06,DEP-WARD,General Ward Room 6,WARD,True
+ROOM-OR-01,DEP-OR,OR Room 1,OR,True
+ROOM-OR-02,DEP-OR,OR Room 2,OR,True
+ROOM-OR-03,DEP-OR,OR Room 3,OR,True
+ROOM-OR-04,DEP-OR,OR Room 4,OR,True
+ROOM-OR-05,DEP-OR,OR Room 5,OR,True
+ROOM-OR-06,DEP-OR,OR Room 6,OR,True
+ROOM-CARD-01,DEP-CARD,Cardiology Clinic 1,CLINIC,True
+ROOM-CARD-02,DEP-CARD,Cardiology Clinic 2,CLINIC,True
+ROOM-CARD-03,DEP-CARD,Cardiology Clinic 3,CLINIC,True
+ROOM-CARD-04,DEP-CARD,Cardiology Clinic 4,CLINIC,True
+ROOM-IMAGING-01,DEP-IMG,Imaging Room,SERVICE,True
+ROOM-LAB-01,DEP-LAB,Laboratory Room,SERVICE,True

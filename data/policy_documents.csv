@@ -1,0 +1,4 @@
+document_id,title,policy_type,department_id,version,effective_from,effective_to,content,approved,source_label
+POL-001,Synthetic staffing minimums,STAFFING,DEP-ER,1.0,2026-07-23,,Example policy: keep at least the configured minimum staff per shift; any schedule violating minimum coverage must be rejected.,False,SYNTHETIC_EXAMPLE
+POL-002,Synthetic bed allocation rules,BED_ALLOCATION,DEP-ICU,1.0,2026-07-23,,"Example policy: only allocate a bed when capacity, bed type, staffing, and required equipment are available. This document is for software testing only.",False,SYNTHETIC_EXAMPLE
+POL-003,Synthetic operating room scheduling rules,OR_SCHEDULING,DEP-OR,1.0,2026-07-23,,Example policy: no overlapping bookings in the same operating room; required role coverage must be present; emergency cases follow configured priority rules.,False,SYNTHETIC_EXAMPLE

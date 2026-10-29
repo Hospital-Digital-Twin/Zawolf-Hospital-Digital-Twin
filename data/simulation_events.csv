@@ -1,0 +1,3 @@
+simulation_event_id,simulation_id,event_time,entity_type,entity_id,event_type,department_id,value_numeric,details_json
+SEV-000001,SIM-BASE-001,2026-10-22 08:00:00,DEPARTMENT,DEP-ER,BASELINE_QUEUE_RESULT,DEP-ER,62.01,"{""arrivals"": 416, ""mean_wait_minutes"": 62.01, ""p90_wait_minutes"": 213.0, ""max_wait_minutes"": 333.0}"
+SEV-000002,SIM-ER30-001,2026-10-22 08:00:00,DEPARTMENT,DEP-ER,SHOCK_QUEUE_RESULT,DEP-ER,223.18,"{""arrivals"": 541, ""mean_wait_minutes"": 223.18, ""p90_wait_minutes"": 656.0, ""max_wait_minutes"": 996.0}"

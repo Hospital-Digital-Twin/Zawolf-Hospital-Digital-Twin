@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Hospital Digital Twin</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<section id="login" class="login" hidden aria-labelledby="login-title">
+  <form id="login-form" class="login-card" autocomplete="on">
+    <div class="brand"><span class="mark" aria-hidden="true"></span><div><b>Hospital Digital Twin</b><small data-t="brand_sub"></small></div></div>
+    <h1 id="login-title" data-t="login_title"></h1>
+    <p class="mute" data-t="login_hint"></p>
+    <label><span data-t="username"></span><input id="u" name="username" autocomplete="username" required></label>
+    <label><span data-t="password"></span><input id="p" name="password" type="password" autocomplete="current-password" required></label>
+    <p id="login-error" class="err" role="alert"></p>
+    <button class="btn primary" type="submit" data-t="sign_in"></button>
+    <button class="btn ghost" type="button" id="login-lang"></button>
+  </form>
+</section>
+
+<div id="app" class="shell" hidden>
+  <aside class="side" id="side" aria-label="Main">
+    <div class="user-card" id="user"></div>
+    <nav id="nav"></nav>
+    <div class="side-foot" id="side-foot"></div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+  <div class="main">
+    <header class="top">
+      <button class="btn icon menu" id="menu" aria-label="Menu"></button>
+      <div class="top-brand"><span class="mark" aria-hidden="true"></span><div><b>Hospital Digital Twin</b><small data-t="brand_sub"></small></div></div>
+      <form id="search" class="search" role="search"><span class="search-ico" id="search-ico"></span><input id="q" type="search" data-tp="search_ph" aria-label="Search sources"></form>
+      <label class="chip-input" title="Replay moment"><span id="cal-ico"></span><input id="asof" type="datetime-local" step="3600" aria-label="Replay moment"></label>
+      <div class="status-pill" id="status-pill" role="status"></div>
+      <button class="btn ghost" id="lang"></button>
+    </header>
+    <main id="view" tabindex="-1"></main>
+  </div>
+</div>
+<div id="tip" class="tip" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<div id="drawer" class="drawer" hidden role="dialog" aria-modal="true"></div>
+<script src="/static/i18n.js"></script>
+<script src="/static/charts.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

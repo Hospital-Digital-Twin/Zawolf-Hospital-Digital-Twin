@@ -1,0 +1,258 @@
+{
+  "_comment": "ILLUSTRATIVE TEST FIXTURE ONLY - numbers are invented to exercise the logic, not hospital data.",
+  "twin": {
+    "as_of": "2026-01-16T08:00:00+00:00",
+    "version": "twin-fixture-1",
+    "pools": {
+      "ICU:beds": {
+        "total": 10,
+        "committed": 8,
+        "hard_max": 14
+      },
+      "ICU:nurses": {
+        "total": 5,
+        "committed": 5
+      },
+      "WARD:beds": {
+        "total": 20,
+        "committed": 10,
+        "hard_max": 24
+      },
+      "WARD:nurses": {
+        "total": 8,
+        "committed": 3
+      },
+      "ER:beds": {
+        "total": 8,
+        "committed": 6,
+        "hard_max": 10
+      }
+    },
+    "slots": [
+      {
+        "domain": "OR",
+        "resource_id": "OR-1",
+        "start": "2026-01-18T09:00:00+00:00",
+        "end": "2026-01-18T12:00:00+00:00",
+        "capacity": 1,
+        "booked": 0,
+        "provider_ids": [
+          "dr-a",
+          "dr-b"
+        ]
+      },
+      {
+        "domain": "CLINIC",
+        "resource_id": "C-1",
+        "start": "2026-01-17T09:00:00+00:00",
+        "end": "2026-01-17T10:00:00+00:00",
+        "capacity": 2,
+        "booked": 3,
+        "provider_ids": [
+          "dr-c"
+        ]
+      },
+      {
+        "domain": "CLINIC",
+        "resource_id": "C-1",
+        "start": "2026-01-17T10:00:00+00:00",
+        "end": "2026-01-17T11:00:00+00:00",
+        "capacity": 2,
+        "booked": 0,
+        "provider_ids": [
+          "dr-c"
+        ]
+      }
+    ],
+    "bookings": [
+      {
+        "id": "or-1",
+        "slot": {
+          "domain": "OR",
+          "resource_id": "OR-1",
+          "start": "2026-01-16T10:00:00+00:00"
+        },
+        "urgency": "non_urgent",
+        "provider_id": "dr-a",
+        "needs_icu_bed": true
+      },
+      {
+        "id": "or-2",
+        "slot": {
+          "domain": "OR",
+          "resource_id": "OR-1",
+          "start": "2026-01-16T11:00:00+00:00"
+        },
+        "urgency": "urgent",
+        "provider_id": "dr-b",
+        "needs_icu_bed": true
+      },
+      {
+        "id": "cl-1",
+        "slot": {
+          "domain": "CLINIC",
+          "resource_id": "C-1",
+          "start": "2026-01-17T09:00:00+00:00"
+        },
+        "urgency": "non_urgent",
+        "provider_id": "dr-c",
+        "needs_icu_bed": false
+      },
+      {
+        "id": "cl-2",
+        "slot": {
+          "domain": "CLINIC",
+          "resource_id": "C-1",
+          "start": "2026-01-17T09:00:00+00:00"
+        },
+        "urgency": "urgent",
+        "provider_id": "dr-c",
+        "needs_icu_bed": false
+      },
+      {
+        "id": "cl-3",
+        "slot": {
+          "domain": "CLINIC",
+          "resource_id": "C-1",
+          "start": "2026-01-17T09:00:00+00:00"
+        },
+        "urgency": "non_urgent",
+        "provider_id": "dr-c",
+        "needs_icu_bed": false
+      }
+    ]
+  },
+  "forecast": {
+    "model_version": "fixture-forecast-1",
+    "confidence": 0.8,
+    "series": {
+      "ICU:beds:demand": [
+        {
+          "ts": "2026-01-16T08:00:00+00:00",
+          "value": 9,
+          "hi": 10
+        },
+        {
+          "ts": "2026-01-16T09:00:00+00:00",
+          "value": 11,
+          "hi": 12
+        },
+        {
+          "ts": "2026-01-16T10:00:00+00:00",
+          "value": 13,
+          "hi": 14
+        },
+        {
+          "ts": "2026-01-16T11:00:00+00:00",
+          "value": 12,
+          "hi": 13
+        }
+      ],
+      "ICU:nurses:demand": [
+        {
+          "ts": "2026-01-16T08:00:00+00:00",
+          "value": 5,
+          "hi": 5
+        },
+        {
+          "ts": "2026-01-16T09:00:00+00:00",
+          "value": 6,
+          "hi": 6
+        },
+        {
+          "ts": "2026-01-16T10:00:00+00:00",
+          "value": 7,
+          "hi": 7
+        },
+        {
+          "ts": "2026-01-16T11:00:00+00:00",
+          "value": 6,
+          "hi": 6
+        }
+      ],
+      "WARD:beds:demand": [
+        {
+          "ts": "2026-01-16T08:00:00+00:00",
+          "value": 10,
+          "hi": 10
+        },
+        {
+          "ts": "2026-01-16T09:00:00+00:00",
+          "value": 11,
+          "hi": 11
+        },
+        {
+          "ts": "2026-01-16T10:00:00+00:00",
+          "value": 12,
+          "hi": 12
+        },
+        {
+          "ts": "2026-01-16T11:00:00+00:00",
+          "value": 11,
+          "hi": 11
+        }
+      ],
+      "WARD:nurses:demand": [
+        {
+          "ts": "2026-01-16T08:00:00+00:00",
+          "value": 4,
+          "hi": 4
+        },
+        {
+          "ts": "2026-01-16T09:00:00+00:00",
+          "value": 4,
+          "hi": 4
+        },
+        {
+          "ts": "2026-01-16T10:00:00+00:00",
+          "value": 5,
+          "hi": 5
+        },
+        {
+          "ts": "2026-01-16T11:00:00+00:00",
+          "value": 4,
+          "hi": 4
+        }
+      ],
+      "ER:beds:demand": [
+        {
+          "ts": "2026-01-16T08:00:00+00:00",
+          "value": 8,
+          "hi": 9
+        },
+        {
+          "ts": "2026-01-16T09:00:00+00:00",
+          "value": 9,
+          "hi": 10
+        },
+        {
+          "ts": "2026-01-16T10:00:00+00:00",
+          "value": 10,
+          "hi": 11
+        },
+        {
+          "ts": "2026-01-16T11:00:00+00:00",
+          "value": 10,
+          "hi": 11
+        }
+      ]
+    }
+  },
+  "simulation": {
+    "run_id": "sim-fixture-1",
+    "seed": 7,
+    "metrics": {
+      "revenue_at_risk_egp": 400000
+    }
+  },
+  "policies": {
+    "nurse.max_patients_per_nurse:ICU": {
+      "value": 2.0,
+      "source": "fixture-policy-icu"
+    },
+    "nurse.max_patients_per_nurse:WARD": {
+      "value": 3.0,
+      "source": "fixture-policy-ward"
+    }
+  }
+}

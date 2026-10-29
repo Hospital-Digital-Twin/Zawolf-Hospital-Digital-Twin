@@ -1,0 +1,8 @@
+department_id,department_name,department_name_ar,department_type,is_active
+DEP-ER,Emergency Department,قسم الطوارئ,ER,True
+DEP-ICU,Intensive Care Unit,وحدة العناية المركزة,ICU,True
+DEP-WARD,General Ward,القسم الداخلي,WARD,True
+DEP-OR,Operating Rooms,غرف العمليات,OR,True
+DEP-CARD,Cardiology Clinic,عيادة القلب,CLINIC,True
+DEP-IMG,Imaging,الأشعة والتصوير,IMAGING,True
+DEP-LAB,Laboratory,المختبر,LAB,True

@@ -1,0 +1,54 @@
+{
+  "dataset_version": "2.0",
+  "table_count": 23,
+  "visit_count": 5356,
+  "bed_stay_count": 5185,
+  "er_bed_stay_count": 4007,
+  "surgery_count": 1260,
+  "days": 90,
+  "bed_overlap_count": 0,
+  "planned_or_overlap_count": 0,
+  "actual_or_overlap_count": 0,
+  "or_day_capacity_violation_count": 0,
+  "staff_shift_overlap_count": 0,
+  "staff_assignment_overlap_count": 0,
+  "resource_booking_overlap_count": 0,
+  "max_staff_hours_in_any_iso_week": 36.0,
+  "wait_longer_than_los_count": 0,
+  "cancelled_surgery_nonzero_realized_margin_count": 0,
+  "er_daily_metric_mismatch_days": [],
+  "departments_in_daily_metrics": 7,
+  "departments_in_financial_daily": 7,
+  "weekday_visit_totals": {
+    "Thursday": 793,
+    "Friday": 650,
+    "Saturday": 598,
+    "Sunday": 832,
+    "Monday": 988,
+    "Tuesday": 871,
+    "Wednesday": 624
+  },
+  "mean_visit_wait_minutes": 58.86,
+  "p90_visit_wait_minutes": 98,
+  "mean_planned_or_utilization": 0.6792,
+  "computed_baseline_queue": {
+    "arrivals": 416,
+    "mean_wait_minutes": 62.01,
+    "p90_wait_minutes": 213.0,
+    "max_wait_minutes": 333.0
+  },
+  "computed_er_plus_30pct_queue": {
+    "arrivals": 541,
+    "mean_wait_minutes": 223.18,
+    "p90_wait_minutes": 656.0,
+    "max_wait_minutes": 996.0
+  },
+  "computed_wait_delta_pct": 259.91,
+  "limitations": [
+    "Synthetic data only",
+    "FCFS queue simulation is simplified and uncalibrated",
+    "Forecast intervals are descriptive, not calibrated",
+    "Decision confidence is blank until calibrated"
+  ],
+  "bilingual_department_labels": true
+}
